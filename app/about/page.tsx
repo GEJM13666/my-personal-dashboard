@@ -1,18 +1,23 @@
 'use client'
 
 import React, { Component } from 'react';
-
+import Image from 'next/image';
 export default class About extends Component {
   render() {
     return (
       <div className="bg-gray-900 min-h-screen flex items-center justify-center p-4 sm:p-6 lg:p-8">
         <div className="max-w-4xl w-full mx-auto bg-gray-800 rounded-2xl shadow-2xl overflow-hidden">
           <div className="md:flex">
-            {/* Left Side - Image and Introduction */}
+            {/* Left Side - Image and Introvduction */}
             <div className="md:w-1/3 bg-gray-700 p-8 flex flex-col justify-center items-center">
               <div className="w-40 h-40 rounded-full bg-gradient-to-br from-gray-500 to-gray-600 mb-6 flex items-center justify-center">
                  {/* You can place an image here */}
-                 <span className="text-6xl text-white">🧑‍💻</span>
+                 <span className="text-6xl text-white"> <Image
+            src="/guneang.jpg"
+            alt="Profile"
+            width={180}
+            height={180}
+          /></span>
               </div>
               <h1 className="text-3xl font-bold text-white text-center">Sakan Wokkum</h1>
               <p className="text-xl text-gray-300 text-center">(Gun)</p>
